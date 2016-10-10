@@ -26,12 +26,12 @@ public class PP2Problema2 {
             System.out.print("2. Yardas" + "\n");
             System.out.print("3. Millas" + "\n");
             opcion=teclado.nextInt();
-        }while (opcion <0 || opcion >3);
+        }while (opcion <=0 || opcion >3); //Mostrar el menu mientras que la opcion elegida sea menor o igual que 0 o mayor que 3
         return opcion;
     }
-    public static double calcularConversion(int opcionelegida){
-        double resultado;
-        switch(opcionelegida){
+    public static double calcularConversion(int opcionelegida){ //Calcula cada una de las conversiones
+        double resultado; //Inicializacion de la variable
+        switch(opcionelegida){ //Entra la opcion elegida en el metodo pasado
             case 1:
                 resultado=convertirPies();
                 break;
@@ -65,7 +65,7 @@ public class PP2Problema2 {
         miDato= entradaEscaner.nextDouble();
         return miDato;
     }
-    public static void muestraResultado(double a){
+    public static void muestraResultado(double a){ //Usa el resultado del metodo calcularConversion para dar un resultado
         System.out.print("El resultado es " + a);
     }
 }
