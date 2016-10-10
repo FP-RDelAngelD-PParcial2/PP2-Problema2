@@ -17,7 +17,7 @@ public class PP2Problema2 {
     public static void main(String[] args) {
      muestraResultado(calcularConversion(menu()));
     }
-    public static int menu(){
+    public static int menu(){ //Creacion de un menu para dar al usuario a elegir la opcion deseada
         int opcion;
         Scanner teclado = new Scanner (System.in);
         do{
