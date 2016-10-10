@@ -15,7 +15,7 @@ public class PP2Problema2 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-     menu();
+     muestraResultado(calcularConversion(menu()));
     }
     public static int menu(){
         int opcion;
@@ -26,7 +26,7 @@ public class PP2Problema2 {
             System.out.print("2. Yardas" + "\n");
             System.out.print("3. Millas" + "\n");
             opcion=teclado.nextInt();
-        }while (opcion <0 || opcion >=3);
+        }while (opcion <0 || opcion >3);
         return opcion;
     }
     public static double calcularConversion(int opcionelegida){
@@ -41,18 +41,31 @@ public class PP2Problema2 {
             case 3:
                 resultado=convertirMillas();
                 break;
+            default:
+                resultado=0;
             }
         return resultado;
     }
     public static double convertirPies(){
-        int m = solicitarDatos("metros ");
+        double m = solicitarDatos("metros para convertir a pies");
         return m*3.28084;
     }
-    public static int solicitarDatos(String d){ //Solicita los valores
-        int miDato;
+    public static double convertirYardas(){
+        double m = solicitarDatos("metros para convertir a yardas");
+        return m*1.094;
+    }
+    public static double convertirMillas(){
+        double m = solicitarDatos("metros para convertir a millas");
+        return m*.000621;
+    }
+    public static double solicitarDatos(String d){ //Solicita los valores
+        double miDato;
         Scanner entradaEscaner = new Scanner(System.in);
         System.out.print("Introduce el dato " + d + "\n");
         miDato= entradaEscaner.nextInt();
         return miDato;
+    }
+    public static void muestraResultado(double a){
+        System.out.print("El resultado es " + a);
     }
 }
