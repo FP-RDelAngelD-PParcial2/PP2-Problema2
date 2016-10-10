@@ -25,7 +25,6 @@ public class PP2Problema2 {
             System.out.print("1. Pies" + "\n");
             System.out.print("2. Yardas" + "\n");
             System.out.print("3. Millas" + "\n");
-            System.out.print("0. Salir" + "\n");
             opcion=teclado.nextInt();
         }while (opcion <0 || opcion >=3);
         return opcion;
@@ -34,8 +33,26 @@ public class PP2Problema2 {
         double resultado;
         switch(opcionelegida){
             case 1:
-                
-        }
+                resultado=convertirPies();
+                break;
+            case 2:
+                resultado=convertirYardas();
+                break;
+            case 3:
+                resultado=convertirMillas();
+                break;
+            }
+        return resultado;
     }
-    
+    public static double convertirPies(){
+        int m = solicitarDatos("metros ");
+        return m*3.28084;
+    }
+    public static int solicitarDatos(String d){ //Solicita los valores
+        int miDato;
+        Scanner entradaEscaner = new Scanner(System.in);
+        System.out.print("Introduce el dato " + d + "\n");
+        miDato= entradaEscaner.nextInt();
+        return miDato;
+    }
 }
