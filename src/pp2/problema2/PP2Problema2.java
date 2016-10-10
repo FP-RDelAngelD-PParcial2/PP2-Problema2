@@ -62,7 +62,7 @@ public class PP2Problema2 {
         double miDato;
         Scanner entradaEscaner = new Scanner(System.in);
         System.out.print("Introduce el dato " + d + "\n");
-        miDato= entradaEscaner.nextInt();
+        miDato= entradaEscaner.nextDouble();
         return miDato;
     }
     public static void muestraResultado(double a){
