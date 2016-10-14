@@ -47,15 +47,15 @@ public class PP2Problema2 {
         return resultado;
     }
     public static double convertirPies(){
-        double m = solicitarDatos("metros para convertir a pies");
+        double m = solicitarDatos("metros para convertir a pies"); //Convierte a pies
         return m*3.28084;
     }
     public static double convertirYardas(){
-        double m = solicitarDatos("metros para convertir a yardas");
+        double m = solicitarDatos("metros para convertir a yardas");//Convierte a yardas
         return m*1.094;
     }
     public static double convertirMillas(){
-        double m = solicitarDatos("metros para convertir a millas");
+        double m = solicitarDatos("metros para convertir a millas"); //Convierte a millas
         return m*.000621;
     }
     public static double solicitarDatos(String d){ //Solicita los valores
