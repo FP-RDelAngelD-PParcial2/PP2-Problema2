@@ -1,0 +1,29 @@
+run:
+Introduce la opcion deseada:
+1. Pies
+2. Yardas
+3. Millas
+1
+Introduce el dato metros para convertir a pies
+25
+El resultado es 82.021BUILD SUCCESSFUL (total time: 5 seconds)
+
+run:
+Introduce la opcion deseada:
+1. Pies
+2. Yardas
+3. Millas
+2
+Introduce el dato metros para convertir a yardas
+98
+El resultado es 107.212BUILD SUCCESSFUL (total time: 3 seconds)
+
+run:
+Introduce la opcion deseada:
+1. Pies
+2. Yardas
+3. Millas
+3
+Introduce el dato metros para convertir a millas
+36
+El resultado es 0.022356BUILD SUCCESSFUL (total time: 4 seconds)
